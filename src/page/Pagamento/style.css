@@ -73,11 +73,11 @@ header .title-header{
 header .title-header h1{
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 13px;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 20px;
     line-height: 20px;
 }
 
