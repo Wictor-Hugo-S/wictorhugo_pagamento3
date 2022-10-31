@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/tela3/static/css/main.915883c5.css",
-    "main.js": "/tela3/static/js/main.3ca25123.js",
-    "static/media/Amex.png": "/tela3/static/media/Amex.cbb547e8eec691ace4cc.png",
-    "index.html": "/tela3/index.html",
-    "main.915883c5.css.map": "/tela3/static/css/main.915883c5.css.map",
-    "main.3ca25123.js.map": "/tela3/static/js/main.3ca25123.js.map"
+    "main.css": "/wictorhugo_pagamento3/static/css/main.915883c5.css",
+    "main.js": "/wictorhugo_pagamento3/static/js/main.e7a2a8fd.js",
+    "static/media/Amex.png": "/wictorhugo_pagamento3/static/media/Amex.cbb547e8eec691ace4cc.png",
+    "index.html": "/wictorhugo_pagamento3/index.html",
+    "main.915883c5.css.map": "/wictorhugo_pagamento3/static/css/main.915883c5.css.map",
+    "main.e7a2a8fd.js.map": "/wictorhugo_pagamento3/static/js/main.e7a2a8fd.js.map"
   },
   "entrypoints": [
     "static/css/main.915883c5.css",
-    "static/js/main.3ca25123.js"
+    "static/js/main.e7a2a8fd.js"
   ]
 }
