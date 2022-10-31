@@ -1,0 +1,303 @@
+main{
+    display: grid; 
+    grid-template-columns: 0.3fr 5fr ; 
+    grid-template-areas: 
+      "aside section";
+     height: 100vh;  
+}
+
+aside{
+    width: 200px;
+    background-color: #006557;
+}
+aside .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside .logo img {
+    width: 50%;
+    margin-top: 30px;
+ 
+}
+aside nav.menu{
+    margin-top: 100px;
+    
+}
+
+aside nav.menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    color: #b5bcbb;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+   
+}
+aside nav.menu .icon{
+    width: 25px;
+   
+}
+aside nav.menu a:hover {
+    box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-6px);
+    color: white;
+    padding: 3px 0;
+}
+/*  Aqui acaba o aside */
+
+
+/* Aqui começa o header */
+
+header{
+    background-color: #006557;
+    display: none;
+    width: 100%;
+}
+
+header .container-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .title-header{
+   margin: 0 auto; 
+}
+
+header .title-header h1{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header .icon-voltar{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 10px;
+}
+/* Aqui acaba o header */
+
+
+
+/* Aqui começa a section  */
+
+section{
+    width: 100%;
+    background-color: #f8f8f8;
+    height: 100%;
+}
+section .title-section {
+    margin-top: 80px;
+    padding-left: 20px;
+  }
+
+  section .title-section p {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    text-align: center;     
+  }
+  section .container{
+    width: 500px;
+    padding-left: 20px;
+    padding: 30px;
+   margin: 0 auto;
+  }
+
+  section form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+section form input{
+    width: 100%;
+    height: 50px;
+    padding: 8px;
+    margin-top: 5px;
+    border: 0;
+    border-radius: 7px;
+    font-size: 15px;
+    border: 1px solid gray; 
+    outline: none;
+    transition: 0.5s;
+}
+
+section .content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+section form .icon-cartao{
+    transform: scale(20%);
+    margin-top: 5px;
+    position: absolute; 
+}
+
+section form input:focus{
+    border:1px solid #006557; 
+}
+ 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+section input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+::-webkit-input-placeholder  { 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+ }
+
+section .button-pagar, .button-voltar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;       
+}
+
+section form .button-pagar .pagar {
+    cursor: pointer;
+    padding: 12px;
+    border: 0;
+    background-color: #07689f;
+    border-radius: 0.5%;
+    color: white;
+    font-size: 17px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease 0s;
+    margin: 12px 0;  
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+section .button-voltar .voltar{
+    cursor: pointer;
+    padding: 12px;
+    border: 0;
+    color: #07689f;
+    font-size: 17px; 
+    background-color: #f8f8f8;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+section form .button-pagar .pagar:hover  {
+    background-image: linear-gradient(to right, #07689f ,#0b5c8b,#07689f );
+    box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-8px);
+}
+/* Aqui acaba a section */
+
+
+
+
+/* Começa o Reponsivo da tela mobile*/
+
+@media(max-width: 780px){
+     
+    main {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+          "aside";
+     }
+     
+    aside{
+      margin-top: 0;
+      width: 100%;
+      background-color: white;
+      grid-row-start: 3;
+      
+    }
+
+    aside .logo img{
+        display: none;
+    }
+
+    aside .logo{
+        display: flex;
+        flex-direction: row;
+    }
+
+    aside nav.menu{
+        margin-top: 0;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+
+    aside nav.menu a {
+        flex-direction: column;
+        margin-top: 25px;
+        color: #6d7a78;
+        margin-bottom: 20px;
+    
+    }
+    aside nav.menu a:hover {
+        color: black;
+    }
+
+        header{
+            grid-row-start: 1;
+            display: block;
+        }
+
+        section{
+            grid-row-start: 2;
+        }
+
+        section .container{
+            width: 100%;
+        
+        }
+    
+    section .titulo-section p {
+        font-size: 15px;     
+    }
+
+}
+
+  @media(max-width: 400px){
+    aside nav.menu a {
+        font-size: 12px; 
+    }
+
+    nav.menu .icon{
+        width: 20px;
+    }
+    section .title-section p{
+        margin: 0;
+        padding: 0;
+        font-size: 17px;
+        width: 90%;
+    }
+
+
+}
