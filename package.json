@@ -1,7 +1,7 @@
 {
   "name": "tela-pagamentos",
   "version": "0.1.0",
-  "homepage": "http://Wictor-Hugo-S.github.io/tela3",
+  "homepage": "http://Wictor-Hugo-S.github.io/wictorhugo_pagamento3",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
